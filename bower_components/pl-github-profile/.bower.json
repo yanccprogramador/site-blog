@@ -1,0 +1,43 @@
+{
+  "name": "pl-github-profile",
+  "description": "A pre defined element to see a profile with the best informations of github",
+  "main": "pl-github-profile.html",
+  "dependencies": {
+    "http": "^3.24.10"
+  },
+  "devDependencies": {
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+  },
+  "resolutions": {
+    "polymer": "^2.0.0"
+  },
+  "homepage": "https://github.com/yanccprogramador/polymer-github-profile",
+  "keywords": [
+    "polymer",
+    "github"
+  ],
+  "authors": [
+    "yanccprogramador"
+  ],
+  "license": "apache2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "1.1.1",
+  "_release": "1.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.1",
+    "commit": "b65beb23adeec692f1a81d8482250ea42717cb3d"
+  },
+  "_source": "https://github.com/yanccprogramador/polymer-github-profile.git",
+  "_target": "^1.1.1",
+  "_originalSource": "pl-github-profile",
+  "_direct": true
+}
