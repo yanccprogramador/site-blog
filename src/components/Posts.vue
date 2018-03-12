@@ -20,18 +20,19 @@
       };
     },
     created() {
-      this.fetchGithubData();
+      this.fetchPostData();
     },
     methods: {
-      async fetchGithubData() {
+      async fetchPostData() {
         const dados = await fetch('https://yc-ti-blog.herokuapp.com/meu/yccp').then(data => data.json());
         this.list = dados.rows;
       },
     },
   };
 </script>
+
 <style>
-table{
-  margin:20px;
-}
+  table {
+    margin: 20px;
+  }
 </style>

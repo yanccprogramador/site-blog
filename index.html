@@ -11,6 +11,10 @@
     <!-- Add to home screen for Android and modern mobile browsers -->
     <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json">
     <meta name="theme-color" content="#000000">
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
     <script src="<%= htmlWebpackPlugin.files.publicPath %>/static/elements/build/webcomponents-lite-js"></script>
     <link rel="import" href="<%= htmlWebpackPlugin.files.publicPath %>/static/elements/build/pl-github-profile.html">
     <link rel="apple-touch-icon" sizes="57x57" href="<%= htmlWebpackPlugin.files.publicPath %>/static/img/apple-icon-57x57.png">
@@ -34,6 +38,8 @@
         for (var file of chunk.files) {
           if (file.match(/\.(js|css)$/)) { %>
     <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>"><% }}} %>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
@@ -41,8 +47,14 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
 
+
   </head>
   <body>
+      <script>
+          $(document).ready(function(){
+            $('.sidenav').sidenav();
+          });
+        </script>
       <pl-github-template username="yanccprogramador"></pl-github-template>
     <noscript>
       This is your fallback content in case JavaScript fails to load.

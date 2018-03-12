@@ -1,14 +1,14 @@
 {
-  "name": "yansite",
-  "short_name": "yansite",
+  "name": "Yan Christoffer programações",
+  "short_name": "Yan Christoffer",
   "icons": [
     {
-      "src": "/static/img/icons/android-chrome-192x192.png",
+      "src": "/static/img/icons/android-icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/static/img/icons/android-chrome-512x512.png",
+      "src": "/static/img/icons/android-icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
