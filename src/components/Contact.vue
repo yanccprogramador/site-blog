@@ -7,7 +7,7 @@
           <input type="text" name="nome" placeholder="Nome">
           <input type="email" name="email" placeholder="email">
           <input type="text" name="mensagem" placeholder="Mensagem">
-          <button type="submit">Enviar</button>
+          <button class="btn waves-effect waves-green" type="submit">Enviar</button>
         </fieldset>
     </form>
   </div>
