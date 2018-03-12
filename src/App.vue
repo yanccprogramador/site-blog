@@ -8,7 +8,7 @@
             <li><a href="/#/">Home</a></li>
             <li><a href="/#/posts">Posts</a></li>
             <li><a href="/#/projects">Projetos</a></li>
-            <li><a href="/#/contato">Contato</a></li>
+            <li><a href="/#/contact">Contato</a></li>
           </ul>
            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-medium-and-down" style="color:#fff"><i class="material-icons">menu</i></a>
         </div>
@@ -17,7 +17,7 @@
         <li><a class="sidenav-close" href="/#/">Home</a></li>
         <li><a class="sidenav-close" href="/#/posts">Posts</a></li>
         <li><a class="sidenav-close" href="/#/projects">Projetos</a></li>
-        <li><a class="sidenav-close" href="/#/contato">Contato</a></li>
+        <li><a class="sidenav-close" href="/#/contact">Contato</a></li>
       </ul>
     </header>
     <main>

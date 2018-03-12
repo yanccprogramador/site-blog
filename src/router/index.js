@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from '@/components/Home';
 import Posts from '@/components/Posts';
 import Projects from '@/components/Projects';
+import Contact from '@/components/Contact';
 
 Vue.use(Router);
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/projects',
       name: 'Projects',
       component: Projects,
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact,
     },
   ],
 });
