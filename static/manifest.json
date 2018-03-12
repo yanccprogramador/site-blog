@@ -44,7 +44,8 @@
      "density": "4.0"
     }
    ],
-  "start_url": "/",
+  "start_url": "/#/",
+  "language":"pt-br",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000"
