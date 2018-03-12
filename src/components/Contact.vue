@@ -2,7 +2,7 @@
   <div class="container">
     <h2>Entre em contato para orçamentos ou dúvidas</h2>
     <form method="POST" action="https://formspree.io/yandepaula@gmail.com">
-        <fieldset>
+        <fieldset style="border:none; margin:20px;">
           <input type="text" name="assunto" placeholder="Assunto">
           <input type="text" name="nome" placeholder="Nome">
           <input type="email" name="email" placeholder="email">
