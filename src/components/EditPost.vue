@@ -1,8 +1,7 @@
 <template>
   <div class="container">
     <div v-show="!logged">
-      <input type="text" id="username" />
-      <input type="password" id="senha" />
+      <input type="password" v-model="senha"  />
       <button class="btn waves-effect waves-green" style="margin:10px;" v-on:click="logar()">Enviar</button>
     </div>
     <div v-show="logged">
@@ -74,7 +73,7 @@
         this.article = dados.rows[0].artigo;
 
       },
-      async logar() {
+     async logar() {
         const dados = await fetch('https://yc-ti-blog.herokuapp.com/usuario/logar', {
           method: 'POST',
           headers: {
@@ -82,7 +81,7 @@
           },
           body: JSON.stringify({
             login: 'yccp',
-            senha:document.getElementById('senha'),
+            senha: this.senha,
           }),
         }).then(data => data.json());
 
