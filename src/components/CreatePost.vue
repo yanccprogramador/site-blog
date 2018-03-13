@@ -81,3 +81,16 @@
   };
 </script>
 
+<style>
+  pre {
+    border: 0.5px solid gray!important;
+    padding:10px;
+  }
+  a{
+    font-size:18px;
+    color:dodgerblue;
+  }
+  blockquote{
+    color:grey;
+  }
+</style>

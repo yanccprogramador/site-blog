@@ -66,7 +66,7 @@
       },
       async fetchPostData() {
         const dados = await fetch(`https://yc-ti-blog.herokuapp.com/slug/${this.$route.params.slug}`).then(data => data.json());
-        this.title = dados.rows[0].titulo;
+        this.titulo = dados.rows[0].titulo;
         this.article = dados.rows[0].artigo;
       },
       async logar() {
@@ -86,3 +86,16 @@
   };
 </script>
 
+<style>
+  pre {
+    border: 0.5px solid gray!important;
+    padding:10px;
+  }
+  a{
+    font-size:18px;
+    color:dodgerblue;
+  }
+  blockquote{
+    color:grey;
+  }
+</style>

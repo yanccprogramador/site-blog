@@ -1,9 +1,5 @@
-
-
 import SocialSharing from 'vue-social-sharing';
-// Basic Use - Covers most scenarios
 import { VueEditor } from 'vue2-editor';
-
 import Vue from 'vue';
 import App from './App';
 import router from './router';

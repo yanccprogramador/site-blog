@@ -4,7 +4,9 @@
     <table class=" highlight centered table-responsive">
       <tbody>
         <tr v-for="post in list">
-          <a :href="'/#/post/'+post.slug"><td>{{ post.titulo}}</td></a>
+          <a :href="'/#/post/'+post.slug" style="center">
+            <td>{{ post.titulo}}</td>
+          </a>
         </tr>
       </tbody>
     </table>
@@ -25,7 +27,7 @@
     methods: {
       async fetchPostData() {
         const dados = await fetch('https://yc-ti-blog.herokuapp.com/meu/yccp').then(data => data.json());
-        this.list = dados.rows;
+        this.list= dados.rows;
       },
     },
   };
@@ -34,5 +36,14 @@
 <style>
   table {
     margin: 20px;
+  }
+
+  table li a {
+    font-size: 20px;
+  }
+
+  a td {
+    font-size: 20px;
+    text-align: center;
   }
 </style>
