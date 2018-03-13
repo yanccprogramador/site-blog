@@ -4,7 +4,7 @@
     <table class=" highlight centered table-responsive">
       <tbody>
         <tr v-for="post in list">
-          <td>{{ post.titulo}}</td>
+          <a :href="'/#/post/'+post.slug"><td>{{ post.titulo}}</td></a>
         </tr>
       </tbody>
     </table>
@@ -13,7 +13,7 @@
 
 <script>
   export default {
-    name: 'Post',
+    name: 'Posts',
     data() {
       return {
         list: [],

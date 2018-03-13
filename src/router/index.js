@@ -2,6 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/Home';
 import Posts from '@/components/Posts';
+import Post from '@/components/Post';
+import CreatePost from '@/components/CreatePost';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 
@@ -16,8 +18,13 @@ export default new Router({
     },
     {
       path: '/posts',
-      name: 'posts',
+      name: 'Posts',
       component: Posts,
+    },
+    {
+      path: '/post/:slug',
+      name: 'Post',
+      component: Post,
     },
     {
       path: '/projects',
@@ -28,6 +35,11 @@ export default new Router({
       path: '/contact',
       name: 'Contact',
       component: Contact,
+    },
+    {
+      path: '/admin/post',
+      name: 'CreatePost',
+      component: CreatePost,
     },
   ],
 });
