@@ -2,7 +2,7 @@
   <div class="container">
     <div v-show="!logged">
       <p>Senha</p>
-      <input type="password" id="senha" />
+      <input type="password" v-model="senha" />
       <button class="btn waves-effect waves-green" style="margin:10px;" v-on:click="logar()">Enviar</button>
     </div>
     <div v-show="logged">
@@ -44,6 +44,7 @@
       return {
         article: '',
         titulo: '',
+        senha:'',
         logged: false,
         config: {},
         success: false,
@@ -74,7 +75,7 @@
           },
           body: JSON.stringify({
             login: 'yccp',
-            senha: document.getElementById('senha'),
+            senha: this.senha,
           }),
         }).then(data => data.json());
 
