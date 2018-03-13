@@ -9,18 +9,16 @@
       <div class="badge green center" style="width:50px;" v-show="success">
         Enviado com sucesso
       </div>
-      <form v-on:submit="sendPost(event)">
-        <div class="input-field">
-          <input type="text" id="titulo" placeholder="Titulo" :value="titulo">
-          <label for="titulo">Titulo</label>
-        </div>
-        <div class="input-field">
-          <vue-editor :value="article" id="artigo"></vue-editor>
-          <label for="artigo">Artigo</label>
-        </div>
 
-        <button class="btn waves-effect waves-green" style="margin:10px;">Enviar</button>
-      </form>
+      <div class="input-field">
+        <input type="text" id="titulo" placeholder="Titulo" v-model="titulo">
+        <label for="titulo">Titulo</label>
+      </div>
+
+      <vue-editor v-model="article" id="artigo"></vue-editor>
+
+
+      <button v-on:click="sendPost()" class="btn waves-effect waves-green" style="margin:10px;">Enviar</button>
       <div style="border:2px solid grey;">
         <h3>Preview</h3>
         <article v-html="article">
@@ -32,7 +30,7 @@
 
 <script>
   import {
-    VueEditor
+    VueEditor,
   } from 'vue2-editor';
 
   export default {
@@ -44,16 +42,14 @@
       return {
         article: '',
         titulo: '',
-        senha:'',
+        senha: '',
         logged: false,
         config: {},
         success: false,
       };
     },
     methods: {
-      async sendPost(e) {
-        e.preventDefault();
-
+      async sendPost() {
         const dados = await fetch('https://yc-ti-blog.herokuapp.com/', {
           method: 'POST',
           headers: {
@@ -80,7 +76,7 @@
         }).then(data => data.json());
 
         this.logged = dados.success;
-      }
+      },
     },
   };
 </script>
