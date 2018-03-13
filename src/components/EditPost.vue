@@ -9,7 +9,7 @@
       <div class="badge green center" style="width:50px;" v-show="success">
         Enviado com sucesso
       </div>
-      <form v-on:submit="sendPost(event)">
+        <form v-on:submit="sendPost(event)">
         <div class="input-field">
           <input type="text" id="titulo" placeholder="Titulo" :value="titulo">
           <label for="titulo">Titulo</label>
@@ -49,10 +49,12 @@
         success: false,
       };
     },
+    created(){
+      this.fetchPostData();
+    },
     methods: {
       async sendPost(e) {
         e.preventDefault();
-
         const dados = await fetch('https://yc-ti-blog.herokuapp.com/', {
           method: 'POST',
           headers: {
@@ -66,12 +68,19 @@
         }).then(data => data.json());
         this.success = dados.success;
       },
-      logar() {
-        if (document.getElementById('username').value == process.env.username && document.getElementById('senha').value == process.env.senha) {
-          this.logged = true;
-        }
-      }
+      async fetchPostData() {
+        const dados = await fetch(`https://yc-ti-blog.herokuapp.com/slug/${this.$route.params.slug}`).then(data => data.json());
+        this.title = dados.rows[0].titulo;
+        this.article = dados.rows[0].artigo;
+
+      },
     },
+    logar() {
+      if (document.getElementById('username').value == process.env.username && document.getElementById('senha').value == process.env.senha) {
+        this.logged = true;
+      }
+    }
+  },
   };
 </script>
 

@@ -4,6 +4,7 @@ import Home from '@/components/Home';
 import Posts from '@/components/Posts';
 import Post from '@/components/Post';
 import CreatePost from '@/components/CreatePost';
+import EditPost from '@/components/EditPost';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/admin/post',
       name: 'CreatePost',
       component: CreatePost,
+    },
+    {
+      path: '/admin/post/:slug',
+      name: 'EditPost',
+      component: EditPost,
     },
   ],
 });
