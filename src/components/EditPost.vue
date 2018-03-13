@@ -9,7 +9,7 @@
       <div class="badge green center" style="width:50px;" v-show="success">
         Enviado com sucesso
       </div>
-        <form v-on:submit="sendPost(event)">
+      <form v-on:submit="sendPost(event)">
         <div class="input-field">
           <input type="text" id="titulo" placeholder="Titulo" :value="titulo">
           <label for="titulo">Titulo</label>
@@ -49,7 +49,7 @@
         success: false,
       };
     },
-    created(){
+    created() {
       this.fetchPostData();
     },
     methods: {
@@ -74,13 +74,12 @@
         this.article = dados.rows[0].artigo;
 
       },
-    },
-    logar() {
-      if (document.getElementById('username').value == process.env.username && document.getElementById('senha').value == process.env.senha) {
-        this.logged = true;
+      logar() {
+        if (document.getElementById('username').value == process.env.username && document.getElementById('senha').value == process.env.senha) {
+          this.logged = true;
+        }
       }
-    }
-  },
+    },
   };
 </script>
 
