@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div v-show="!logged">
-      <input type="text" id="username" />
+      <p>Senha</p>
       <input type="password" id="senha" />
       <button class="btn waves-effect waves-green" style="margin:10px;" v-on:click="logar()">Enviar</button>
     </div>
@@ -66,10 +66,19 @@
         }).then(data => data.json());
         this.success = dados.success;
       },
-      logar() {
-        if (document.getElementById('username').value == process.env.username && document.getElementById('senha').value == process.env.senha) {
-          this.logged = true;
-        }
+      async logar() {
+        const dados = await fetch('https://yc-ti-blog.herokuapp.com/usuario/logar', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            login: 'yccp',
+            senha: document.getElementById('senha'),
+          }),
+        }).then(data => data.json());
+
+        this.logged = dados.success;
       }
     },
   };
