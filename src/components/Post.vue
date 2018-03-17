@@ -5,7 +5,7 @@
     </article>
 
     <br>
-    <social-sharing :url="'/#/post/'+$route.params.slug" :title="post.titulo" :description="post.artigo.substring(0,20)"
+    <social-sharing :url="'https://yanchristoffer.com.br/#/post/'+$route.params.slug" :title="post.titulo" :description="post.artigo.substring(0,40)"
       twitter-user="yan_christoffer" inline-template align="right">
       <div>
     <p>Compartilhe</p>
@@ -59,7 +59,9 @@
     color:dodgerblue;
   }
   blockquote{
-    color:grey;
+    margin: 20px 0;
+    padding-left: 1.5rem;
+    border-left: 5px solid #000; /* Just change the color value and that's it*/
   }
 </style>
 

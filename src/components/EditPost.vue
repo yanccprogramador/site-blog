@@ -95,7 +95,9 @@
     font-size:18px;
     color:dodgerblue;
   }
-  blockquote{
-    color:grey;
+   blockquote{
+    margin: 20px 0;
+    padding-left: 1.5rem;
+    border-left: 5px solid #000; /* Just change the color value and that's it*/
   }
 </style>
