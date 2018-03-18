@@ -88,7 +88,7 @@
       };
     },
     created() {
-      console.log(process.env)
+      console.log(process.env);
       this.fetchGithubData();
     },
     methods: {
