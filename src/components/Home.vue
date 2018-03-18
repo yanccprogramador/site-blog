@@ -88,11 +88,12 @@
       };
     },
     created() {
+      console.log(process.env)
       this.fetchGithubData();
     },
     methods: {
       async fetchGithubData() {
-        const dados = await fetch(`https://api.github.com/users/yanccprogramador?access_token=${process.env.access_token}`).then(data => data.json());
+        const dados = await fetch(`https://api.github.com/users/yanccprogramador?access_token=${process.env.ACCESS_TOKEN}`).then(data => data.json());
         this.name = dados.name;
         this.orgs = dados.company;
         this.img = dados.avatar_url;
