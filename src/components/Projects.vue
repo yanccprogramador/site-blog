@@ -1,7 +1,15 @@
 <template>
   <div class="container">
+    <div class="center" v-show="loading">
+    <br><br>
+    <div class="progress" style="width:100%">
+      <div class="indeterminate"></div>
+    </div>
+    <br><br>
+  </div>
+  <div v-show="!loading">
     <h2>Meus Projetos</h2>
-    <table class=" highlight centered table-responsive">
+    <table class="highlight centered responsive-table">
       <tbody>
         <tr v-for="project in list">
           <td><p><strong>{{ project.name}}  </strong></p>
@@ -14,6 +22,7 @@
       </tbody>
     </table>
   </div>
+  </div>
 </template>
 
 <script>
@@ -22,6 +31,7 @@
     data() {
       return {
         list: [],
+        loading: true,
       };
     },
     created() {
@@ -29,8 +39,10 @@
     },
     methods: {
       async fetchGithubData() {
-        const dados = await fetch('https://api.github.com/users/yanccprogramador/repos').then(data => data.json());
+        this.loading = true;
+        const dados = await fetch('https://api.github.com/users/yanccprogramador/repos?access_token=ce533e9742e2c84db446c3fcec872a193b52a3d3').then(data => data.json());
         this.list = dados;
+        this.loading = false;
       },
     },
   };
@@ -38,5 +50,12 @@
 <style>
 table{
   margin:20px;
+}
+
+@media (max-width:500px) {
+  .container{
+    margin:0 !important;
+    padding:0 !important;
+  }
 }
 </style>

@@ -3,9 +3,9 @@
     <div class="col s12 m3">
       <div class="card">
         <div class="card-image">
-          <img :src="img" alt="Yan"/>
+          <img :src="img" alt="Yan" />
           <span class="card-title">
-                                    {{name}} @{{login}}</span>
+                                      {{name}} @{{login}}</span>
         </div>
         <div class="card-content">
           <p>{{bio}}</p>
@@ -70,10 +70,15 @@
 <script>
   export default {
     name: 'Home',
+    props: {
+      gp: {
+        twoWay: true,
+      },
+    },
     data() {
       return {
         name: '',
-        org: '',
+        orgs: '',
         img: '',
         login: '',
         repos: '',
@@ -87,9 +92,9 @@
     },
     methods: {
       async fetchGithubData() {
-        const dados = await fetch('https://api.github.com/users/yanccprogramador').then(data => data.json());
+        const dados = await fetch('https://api.github.com/users/yanccprogramador?access_token=ce533e9742e2c84db446c3fcec872a193b52a3d3').then(data => data.json());
         this.name = dados.name;
-        this.org = dados.company;
+        this.orgs = dados.company;
         this.img = dados.avatar_url;
         this.login = dados.login;
         this.repos = dados.public_repos;

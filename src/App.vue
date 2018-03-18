@@ -21,7 +21,7 @@
       </ul>
     </header>
     <main>
-      <router-view></router-view>
+      <router-view ></router-view>
     </main>
     <footer class="page-footer black" style="margin-top:10px;">
       <div class="container">

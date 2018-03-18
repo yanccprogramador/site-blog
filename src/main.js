@@ -11,6 +11,9 @@ Vue.config.productionTip = false;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  data: {
+    gp: 0,
+  },
   router,
   render: h => h(App),
 });

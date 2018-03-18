@@ -5,13 +5,16 @@
     </article>
 
     <br>
-    <social-sharing :url="'https://yanchristoffer.com.br/#/post/'+$route.params.slug" :title="post.titulo" :description="post.artigo.substring(0,40)"
+    <social-sharing :url="'https://yanchristoffer.com.br/#/post/'+$route.params.slug" :title="post.titulo" :description="post.titulo"
       twitter-user="yan_christoffer" inline-template align="right">
       <div>
     <p>Compartilhe</p>
         <network network="email">
           <i class="fa fa-envelope"></i> Email
         </network>
+        <network network="twitter">
+        <i class="fa fa-twitter"></i> Twitter
+      </network>
         <network network="facebook">
           <i class="fab fa-facebook-f"></i> Facebook
         </network>
