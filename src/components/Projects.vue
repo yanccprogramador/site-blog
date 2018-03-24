@@ -40,7 +40,7 @@
     methods: {
       async fetchGithubData() {
         this.loading = true;
-        const dados = await fetch(`https://api.github.com/users/yanccprogramador/repos?access_token=${process.env.access_token}`).then(data => data.json());
+        const dados = await fetch(`https://api.github.com/users/yanccprogramador/repos?access_token=${process.env.ACCESS_TOKEN}`).then(data => data.json());
         this.list = dados;
         this.loading = false;
       },
