@@ -52,9 +52,9 @@
         <li><img src="../assets/pf.png" class="circle" width="40px" height="40px" alt="Primefaces"><a href="https://www.primefaces.org/">Primefaces</a></li>
         <li><img src="../assets/php.png" class="circle" width="40px" height="40px" alt="PHP"><a href="https://secure.php.net/manual/pt_BR/">PHP</a></li>
         <li><img src="../assets/postgresql.png" class="circle" width="40px" height="40px" alt="Postgres Sql"><a href="https://www.postgresql.org/">PostgreSql</a></li>
-        <li><img src="../assets/ps.png" class="circle" width="40px" height="40px" alt="Photoshop"><a href="http://www.adobe.com/br/products/photoshop.html">Photoshop</a></li>
-      </ul>
+        </ul>
       <ul class="col m4">
+        <li><img src="../assets/ps.png" class="circle" width="40px" height="40px" alt="Photoshop"><a href="http://www.adobe.com/br/products/photoshop.html">Photoshop</a></li>
         <li><img src="../assets/python.png" class="circle" width="40px" height="40px" alt="Python"><a href="https://python.org/">Python</a></li>
         <li><img src="../assets/react.png" class="circle" width="40px" height="40px" alt="React"><a href="https://reactjs.org">React</a></li>
         <li><img src="../assets/symfony.png" class="circle" width="40px" height="40px" alt="Symfony"><a href="https://symfony.com">Symfony</a></li>
