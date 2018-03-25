@@ -59,7 +59,7 @@
           },
           body: JSON.stringify({
             titulo: this.titulo,
-            artigo: this.article,
+            artigo: this.article.replace('&lt;','<').replace('&gt;','>'),
             dono: 'yccp',
           }),
         }).then(data => data.json());
