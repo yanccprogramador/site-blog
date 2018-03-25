@@ -52,11 +52,13 @@
 
   table li a {
     font-size: 20px;
+    color:#000;
   }
 
   a td {
     font-size: 20px;
     text-align: center;
+    color:#000;
   }
 
 </style>
