@@ -44,6 +44,7 @@
         logged: false,
         config: {},
         success: false,
+        id: 0,
       };
     },
     created() {
@@ -51,13 +52,13 @@
     },
     methods: {
       async sendPost() {
-        const dados = await fetch('https://yc-ti-blog.herokuapp.com/', {
-          method: 'POST',
+        const dados = await fetch(`https://yc-ti-blog.herokuapp.com/${this.id}`, {
+          method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            title: this.titulo,
+            titulo: this.titulo,
             artigo: this.article,
             dono: 'yccp',
           }),
@@ -68,6 +69,7 @@
         const dados = await fetch(`https://yc-ti-blog.herokuapp.com/slug/${this.$route.params.slug}`).then(data => data.json());
         this.titulo = dados.rows[0].titulo;
         this.article = dados.rows[0].artigo;
+        this.id = dados.rows[0].id;
       },
       async logar() {
         const dados = await fetch('https://yc-ti-blog.herokuapp.com/usuario/logar', {

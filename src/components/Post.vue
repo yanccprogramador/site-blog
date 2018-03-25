@@ -1,9 +1,8 @@
 <template>
   <div class="container">
     <h2>{{ post.titulo}}</h2>
-    <article v-html="post.artigo" style="margin-bottom:15px;">
-    </article>
-
+    <div v-html="post.artigo" style="margin-bottom:15px;">
+    </div>
     <br>
     <social-sharing :url="'https://yanchristoffer.com.br/#/post/'+$route.params.slug" :title="post.titulo" :description="post.titulo"
       twitter-user="yan_christoffer" inline-template align="right">
