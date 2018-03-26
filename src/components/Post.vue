@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <h2>{{ post.titulo}}</h2>
-    <div v-html="post.artigo" style="margin-bottom:15px; padding:20px;">
+    <h2 class="center">{{ post.titulo}}</h2>
+    <div v-html="post.artigo" style="margin-bottom:15px; padding:18px;">
     </div>
     <br>
     <social-sharing :url="'https://yanchristoffer.com.br/#/post/'+$route.params.slug" :title="post.titulo" :description="post.titulo"
@@ -52,26 +52,19 @@
 </script>
 
 <style>
-  pre {
-    border: 0.5px solid gray!important;
-    padding:10px;
-  }
+
   pre {
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border: 1px solid #BCBEC0;
     background: #F1F3F5;
-    font:12px Monaco,Consolas,"Andale  Mono","DejaVu Sans Mono",monospace
-}
-
-code {
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border: 1px solid #BCBEC0;
-    padding: 2px;
-    font:12px Monaco,Consolas,"Andale  Mono","DejaVu Sans Mono",monospace
+    font:12px Monaco,Consolas,"Andale  Mono","DejaVu Sans Mono",monospace;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;
 }
 
 pre code {
@@ -79,8 +72,13 @@ pre code {
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border: 0px;
-    padding: 2px;
-    font:12px Monaco,Consolas,"Andale  Mono","DejaVu Sans Mono",monospace
+    padding: 15px;
+    font:12px Monaco,Consolas,"Andale  Mono","DejaVu Sans Mono",monospace;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;
 }
   a{
     font-size:18px;
