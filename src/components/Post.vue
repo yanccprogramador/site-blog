@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h2>{{ post.titulo}}</h2>
-    <div v-html="post.artigo" style="margin-bottom:15px;">
+    <div v-html="post.artigo" style="margin-bottom:15px; padding:20px;">
     </div>
     <br>
     <social-sharing :url="'https://yanchristoffer.com.br/#/post/'+$route.params.slug" :title="post.titulo" :description="post.titulo"
