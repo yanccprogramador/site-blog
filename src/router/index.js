@@ -7,6 +7,7 @@ import CreatePost from '@/components/CreatePost';
 import EditPost from '@/components/EditPost';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
+import Career from '@/components/Career';
 
 Vue.use(Router);
 
@@ -16,6 +17,11 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home,
+    },
+    {
+      path: '/career',
+      name: 'Career',
+      component: Career,
     },
     {
       path: '/posts',

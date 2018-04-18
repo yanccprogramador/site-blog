@@ -4,6 +4,7 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 
+
 Vue.use(SocialSharing);
 Vue.use(VueEditor);
 Vue.config.productionTip = false;
