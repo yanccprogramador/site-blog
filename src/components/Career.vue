@@ -7,7 +7,7 @@
            <timeline-item color='green'>Donuz fidelização de clientes
             <small>Full Stack Developer</small>
            </timeline-item>
-           <timeline-item color='red'>Donuz Fidelização de Clientes
+           <timeline-item color='yellow'>Donuz Fidelização de Clientes
             <small>Intern Full Stack Developer</small>
            </timeline-item>
            <timeline-item color='red'>4yousee Digital Signage
