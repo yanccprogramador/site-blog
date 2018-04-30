@@ -16,6 +16,7 @@
       </nav>
       <ul id="slide-out" class="sidenav">
         <li><a class="sidenav-close" href="/#/">Home</a></li>
+        <li><a href="/#/career">Carreira</a></li>
         <li><a class="sidenav-close" href="/#/posts">Posts</a></li>
         <li><a class="sidenav-close" href="/#/projects">Projetos</a></li>
         <li><a class="sidenav-close" href="/#/contact">Contato</a></li>
