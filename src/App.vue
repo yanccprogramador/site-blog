@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container">© 2018 Copyright Text</div>
+        <div class="container">© 2018 Yan Christoffer todos os direitos reservados.</div>
       </div>
     </footer>
   </div>
