@@ -31,7 +31,7 @@
           <div class="col l6 s12">
             <h5 class="white-text">Desenvolvido por Yan Christoffer</h5>
             <p class="grey-text text-lighten-4">
-              Técnico em informática pela UFV-Florestal <br />Graduando em Ciência da computação pela Faculdade Pitágoras-Betim <br />
+              Técnico em informática pela UFV-Florestal <br />Graduado em Ciência da Computação pela Faculdade Pitágoras-Betim <br />
             </p>
           </div>
           <div class="col l4 offset-l2 s12">
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container">© 2018 Yan Christoffer todos os direitos reservados.</div>
+        <div class="container">© 2020 Yan Christoffer todos os direitos reservados.</div>
       </div>
     </footer>
   </div>

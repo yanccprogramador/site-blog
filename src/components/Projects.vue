@@ -1,3 +1,4 @@
+import { ACCESS_TOKEN } from '../../config/prod.env';
 <template>
   <div class="container">
     <div class="center" v-show="loading">
@@ -40,7 +41,8 @@
     methods: {
       async fetchGithubData() {
         this.loading = true;
-        const dados = await fetch(`https://api.github.com/users/yanccprogramador/repos?access_token=${process.env.ACCESS_TOKEN}`).then(data => data.json());
+        const dados = await fetch('https://api.github.com/users/yanccprogramador/repos',
+          { method: 'GET', headers: { Authorization: `Basic ${btoa(process.env.ACCESS_TOKEN)}` } }).then(data => data.json());
         this.list = dados;
         this.loading = false;
       },

@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class='col m6'>
-      <p> Meu nome é Yan Christoffer e sou , brasileiro, atualmente Full Stack Developer na Donuz , formado em Técnico em Informática pela UFV-Florestal e Graduando em ciência da computação pela Faculdade Pitágoras-Betim.
+      <p> Meu nome é Yan Christoffer e sou , brasileiro, atualmente Full Stack Developer na Donuz , formado em Técnico em Informática pela UFV-Florestal e Graduado em Ciência da Computação pela Faculdade Pitágoras-Betim.
       </p>
       <p>Amante de tecnologia, entusiasta de novas linguagens, biblioteca e frameworks. Desenvolvedor principalmente PHP e JavaScript porém sei também diversas outras linguagens e ferramentas. participante frequente de eventos e comunidades de desenvolvimento.
       </p>
@@ -38,11 +38,12 @@
         <li><img src='../assets/c.png' class='circle' width='40px' height='40px' alt='C#'><a href='https://msdn.microsoft.com/pt-BR/library/kx37x362.aspx'>C#</a></li>
         <li><img src='../assets/cpp.png' class='circle' width='40px' height='40px' alt='C++'><a href='https://pt.wikipedia.org/wiki/C%2B%2B'>C++</a></li>
         <li><img src='../assets/django.png' class='circle' width='40px' height='40px' alt='Django'><a href='https://www.djangoproject.com/'>Django</a></li>
+        <li><img src='../assets/flutter.png' class='circle' width='40px' height='40px' alt='Flutter'><a href='https://flutter.dev/'>Flutter</a></li>
         <li><img src='../assets/java.png' class='circle' width='40px' height='40px' alt='Java'><a href='https://www.java.com/pt_BR/'>Java</a></li>
+        </ul>
+      <ul class='col m4'>
         <li><img src='../assets/js.png' class='circle' width='40px' height='40px' alt='JavaScript'><a href='https://www.javascript.com/'>JavaScript</a></li>
         <li><img src='../assets/laravel.png' class='circle' width='40px' height='40px' alt='Laravel'><a href='https://laravel.com/'>Laravel</a></li>
-      </ul>
-      <ul class='col m4'>
         <li><img src='../assets/materialize.png' class='circle' width='40px' height='40px' alt='Materialize'><a href='http://materializecss.com/'>Materialize</a></li>
         <li><img src='../assets/sql-server.png' class='circle' width='40px' height='40px' alt='Sql Server'><a href='https://www.microsoft.com/pt-br/sql-server/sql-server-2017'>Microsoft Sql Server</a></li>
         <li><img src='../assets/mongo.png' class='circle' width='40px' height='40px' alt='Mongodb'><a href='https://www.mongodb.com/?_ga=2.178384740.1545352998.1510785540-1928681075.1508100057'>Mongo DB</a></li>
@@ -50,10 +51,10 @@
         <li><img src='../assets/nodejs.png' class='circle' width='40px' height='40px' alt='Node.js'><a href='http://nodejs.org/'>Node.Js</a></li>
         <li><img src='../assets/nwjs.png' class='circle' width='40px' height='40px' alt='Nw.js'><a href='https://nwjs.io/'>NW.js(Node Webkit)</a></li>
         <li><img src='../assets/pf.png' class='circle' width='40px' height='40px' alt='Primefaces'><a href='https://www.primefaces.org/'>Primefaces</a></li>
-        <li><img src='../assets/php.png' class='circle' width='40px' height='40px' alt='PHP'><a href='https://secure.php.net/manual/pt_BR/'>PHP</a></li>
-        <li><img src='../assets/postgresql.png' class='circle' width='40px' height='40px' alt='Postgres Sql'><a href='https://www.postgresql.org/'>PostgreSql</a></li>
       </ul>
       <ul class='col m4'>
+        <li><img src='../assets/php.png' class='circle' width='40px' height='40px' alt='PHP'><a href='https://secure.php.net/manual/pt_BR/'>PHP</a></li>
+        <li><img src='../assets/postgresql.png' class='circle' width='40px' height='40px' alt='Postgres Sql'><a href='https://www.postgresql.org/'>PostgreSql</a></li>
         <li><img src='../assets/ps.png' class='circle' width='40px' height='40px' alt='Photoshop'><a href='http://www.adobe.com/br/products/photoshop.html'>Photoshop</a></li>
         <li><img src='../assets/python.png' class='circle' width='40px' height='40px' alt='Python'><a href='https://python.org/'>Python</a></li>
         <li><img src='../assets/react.png' class='circle' width='40px' height='40px' alt='React'><a href='https://reactjs.org'>React</a></li>
