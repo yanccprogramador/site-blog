@@ -100,9 +100,9 @@
     methods: {
       async fetchGithubData() {
         const dados = await fetch(
-          `https://api.github.com/users/yanccprogramador?access_token=${
-            process.env.ACCESS_TOKEN
-          }`).then(data => data.json());
+          `https://api.github.com/users/yanccprogramador`
+          ,{method: 'GET',headers: {Authorization: `Basic ${btoa(process.env.ACCESS_TOKEN)}`}})
+          .then(data => data.json());
         this.name = dados.name;
         this.orgs = dados.company;
         this.img = dados.avatar_url;
