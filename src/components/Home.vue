@@ -100,8 +100,12 @@
     methods: {
       async fetchGithubData() {
         const dados = await fetch(
-          `https://api.github.com/users/yanccprogramador`
-          ,{method: 'GET',headers: {Authorization: `Basic ${btoa(process.env.ACCESS_TOKEN)}`}})
+          'https://api.github.com/users/yanccprogramador',
+          { method: 'GET',
+            headers: {
+              Authorization: `Basic ${btoa(process.env.ACCESS_TOKEN)}`,
+            },
+          })
           .then(data => data.json());
         this.name = dados.name;
         this.orgs = dados.company;

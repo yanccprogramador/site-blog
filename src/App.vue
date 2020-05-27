@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="DARKMODE?'dark':''">
     <header>
       <nav>
         <div class="nav-wrapper black">
@@ -22,8 +22,19 @@
         <li><a class="sidenav-close" href="/#/contact">Contato</a></li>
       </ul>
     </header>
-    <main>
+    <main >
       <router-view ></router-view>
+        <div class="dark-mode-switch">
+           <!-- Switch -->
+          <div class="switch">
+            <label>
+              <i class="material-icons">wb_incandescent</i>
+              <input type="checkbox" v-model="DARKMODE" @change="setPreference">
+              <span class="lever"></span>
+              <i class="material-icons">brightness_4</i>
+            </label>
+          </div>
+        </div>
     </main>
     <footer class="page-footer black" style="margin-top:10px;">
       <div class="container">
@@ -59,5 +70,68 @@
 <script>
   export default {
     name: 'app',
+    data() {
+      return {
+        DARKMODE: false,
+      };
+    },
+    beforeMount() {
+      this.DARKMODE = localStorage.getItem('DARK_MODE') ?
+        localStorage.getItem('DARK_MODE') :
+        false;
+    },
+    methods: {
+      setPreference() {
+        localStorage.setItem('DARK_MODE', this.DARKMODE);
+      },
+    },
   };
 </script>
+<style>
+.dark{
+  background-color: #333!important;
+  color: #fff!important;
+}
+.dark a{
+  color: #fff!important;
+}
+.dark h3{
+  color: #fff!important;
+}
+.dark small{
+  color: #ccc!important;
+}
+.dark li{
+  color: #fff!important;
+}
+.dark td{
+  color: #fff!important;
+}
+.dark .card-content{
+  background-color: #333!important;
+  color: #fff!important;
+}
+.dark-mode-switch{
+  border-radius: 50px;
+  width: 11%;
+  position: fixed;
+  bottom: 10%;
+  right: 5px;
+  background-color: #000;
+  padding: 15px;
+  color:#fff!important;
+}
+.dark-mode-switch .switch label .lever{
+  background-color: #fff;
+}
+.dark .dark-mode-switch{
+  background-color: #fff!important;
+  color:#000!important;
+}
+.dark .dark-mode-switch.label{
+  color:#fff!important;
+}
+.dark-mode-switch.label{
+  color:#000!important;
+}
+</style>
