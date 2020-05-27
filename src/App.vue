@@ -20,11 +20,19 @@
         <li><a class="sidenav-close" href="/#/posts">Posts</a></li>
         <li><a class="sidenav-close" href="/#/projects">Projetos</a></li>
         <li><a class="sidenav-close" href="/#/contact">Contato</a></li>
+        <li><a><div class="switch">
+            <label>
+              <i class="material-icons">wb_incandescent</i>
+              <input type="checkbox" v-model="DARKMODE" @change="setPreference">
+              <span class="lever" style="padding:unset;"></span>
+              <i class="material-icons">brightness_4</i>
+            </label>
+          </div></a></li>
       </ul>
     </header>
     <main >
       <router-view ></router-view>
-        <div class="dark-mode-switch">
+        <div class="dark-mode-switch hide-on-med-and-down">
            <!-- Switch -->
           <div class="switch">
             <label>
@@ -111,6 +119,9 @@
   background-color: #333!important;
   color: #fff!important;
 }
+.dark #slide-out{
+  background-color: #000;
+}
 .dark-mode-switch{
   border-radius: 50px;
   width: 11%;
@@ -134,4 +145,5 @@
 .dark-mode-switch.label{
   color:#000!important;
 }
+
 </style>
