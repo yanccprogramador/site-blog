@@ -1,18 +1,17 @@
 <template>
-  <home-component />
+    <career-component />
 </template>
-
 <script lang="ts">
 import { defineComponent } from 'vue';
 
 // Components
-import HomeComponent from '../components/HomeComponent.vue';
+import CareerComponent from '../components/CareerComponent.vue';
 
 export default defineComponent({
-  name: 'HomeView',
+  name: 'CareerView',
 
   components: {
-    HomeComponent,
+    CareerComponent,
   },
 });
 </script>
