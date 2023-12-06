@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar :elevation="2">
+    <v-app-bar :elevation="2" theme="dark">
       <v-app-bar-title>
         <a href="/" class="brand-logo"
           ><v-img
@@ -21,7 +21,7 @@
     <v-main>
       <router-view />
     </v-main>
-    <v-footer class="text-center d-flex flex-column">
+    <v-footer class="text-center d-flex flex-column" theme="dark">
       <v-row>
         <div>
           <a href="https://www.linkedin.com/in/yan-christoffer-4b401a135/">
