@@ -16,12 +16,15 @@
         <v-list-item
           ><router-link to="career"><v-btn>Carreira</v-btn></router-link></v-list-item
         >
+         <v-list-item
+          ><router-link to="blog"><v-btn>Blog</v-btn></router-link></v-list-item
+        >
       </v-list>
     </v-app-bar>
     <v-main>
       <router-view />
     </v-main>
-    <v-footer class="text-center d-flex flex-column" theme="dark">
+    <v-footer class="text-center d-flex flex-column" theme="dark" fixed>
       <v-row>
         <div>
           <a href="https://www.linkedin.com/in/yan-christoffer-4b401a135/">
