@@ -23,7 +23,7 @@ export default defineComponent({
     this.loading = true;
     this.post = Object.values(await fetch(
       `https://ycti-blog.firebaseio.com/yccp/${this.$route.params.slug}.json`
-    ).then((data) => data.json()))[0];
+    ).then((data) => data.json()))[0] as any;
     this.loading = false;
 
   },
